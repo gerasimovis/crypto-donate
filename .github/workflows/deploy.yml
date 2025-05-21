@@ -16,7 +16,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: deployer
-          password: ${{ secrets.DEPLOYER_PASS }}
+          key: ${{ secrets.KEY }}
           script: |
             cd ~/crypto-donate
             git pull origin master
